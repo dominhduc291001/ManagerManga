@@ -24,7 +24,7 @@ namespace Manager_Manga.Data.DBcontext
         }
         public DbSet<Manga> Mangas { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<CategoryManga> MapCategories { get; set; }
+        public DbSet<CategoryManga> MangaCategories { get; set; }
         public DbSet<Chap> Chaps { get; set; }
     }
 }
