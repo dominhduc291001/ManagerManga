@@ -11,8 +11,7 @@ namespace Manager_Manga.Data.DBcontext
 {
     public class MangaDBContext : DbContext
     {
-        public MangaDBContext() : base("MangaConnection") {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MangaDBContext, Manager_Manga.Migrations.Configuration>());
+        public MangaDBContext() : base("Manga_Connection") {
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

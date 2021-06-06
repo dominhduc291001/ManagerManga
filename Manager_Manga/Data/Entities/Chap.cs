@@ -12,6 +12,6 @@ namespace Manager_Manga.Data.Entities
         public string idManga { get; set; }
         public string nameChap { get; set; }
         public string ContentManga { get; set; }
-        public Manga Manga { get; set; }
+        public virtual Manga Manga { get; set; }
     }
 }

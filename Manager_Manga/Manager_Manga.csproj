@@ -65,23 +65,37 @@
     <Compile Include="Data\Entities\CategoryManga.cs" />
     <Compile Include="Data\Entities\Chap.cs" />
     <Compile Include="Data\Entities\Manga.cs" />
-    <Compile Include="Migrations\202105252134351_InitialCreate.cs" />
-    <Compile Include="Migrations\202105252134351_InitialCreate.designer.cs">
-      <DependentUpon>202105252134351_InitialCreate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Services\All_Service.cs" />
     <Compile Include="Services\CategoryManga_service.cs" />
-    <Compile Include="Views\Form1.cs">
+    <Compile Include="Services\Chap_service.cs" />
+    <Compile Include="Services\Manga_service.cs" />
+    <Compile Include="Views\addCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\addCategory.Designer.cs">
+      <DependentUpon>addCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\addCategoryManga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\addCategoryManga.Designer.cs">
+      <DependentUpon>addCategoryManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\addChap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\addChap.Designer.cs">
+      <DependentUpon>addChap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Build\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\202105252134351_InitialCreate.resx">
-      <DependentUpon>202105252134351_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +105,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\addCategory.resx">
+      <DependentUpon>addCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\addCategoryManga.resx">
+      <DependentUpon>addCategoryManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\addChap.resx">
+      <DependentUpon>addChap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
